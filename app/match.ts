@@ -3,7 +3,7 @@ export class Match {
     player2: any;
     player1Sets: Array<number>;
     player2Sets: Array<number>;
-    matchDone: Boolean;
+    matchDone: boolean;
     setDiff: number;
     pointDiff: number;
     winner: any;
@@ -26,7 +26,7 @@ export class Match {
         return diff > 0 ? this.player1 : this.player2;
     }
 
-    finishMatch() {
+    public finishMatch() {
         let s1 = this.calculateSetWinner(0);
         let s2 = this.calculateSetWinner(1);
         let s3 = this.calculateSetWinner(2);
